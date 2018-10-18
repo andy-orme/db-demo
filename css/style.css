@@ -67,12 +67,8 @@ h3 {
   line-height: 1.2;
 }
 
-p {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-a {
+.cta {
+  display: inline-block;
   border-radius: 5px;
   position: relative;
   color: #fff;
@@ -132,6 +128,10 @@ Timeline
 
 .tl-content {
   padding-left: 4em;
+}
+
+.tl-content p {
+  margin-bottom: 20px;
 }
 
 .tl-node:before {
