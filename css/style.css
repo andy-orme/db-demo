@@ -35,9 +35,10 @@ html {
   font-size: 16px;
 }
 
-body {
+body {  
+  background: #F46862;
   font-family: 'Roboto', sans-serif;
-  color: #222222;
+  color: #FFF;
   font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 300;
@@ -66,13 +67,24 @@ h3 {
   line-height: 1.2;
 }
 
+p {
+  position: relative;
+  margin-bottom: 30px;
+}
+
 a {
+  border-radius: 5px;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  background: #313339;
+  padding: 15px 30px;
   font-weight: 700;
 }
 
 a:hover, a:focus {
-  color: #ff6000 ;
-  text-decoration: none; 
+background: #fff;
+color: #F46862;
 }
 
 .container {
@@ -82,6 +94,10 @@ a:hover, a:focus {
 
 .introduction {
   margin: 40px 0;
+}
+
+.deliverables {
+  margin-bottom: 80px;
 }
 
 /************************************
@@ -94,7 +110,7 @@ Timeline
 
 /* Timeline Container */
 .timeline {
-  border-left: 5px solid #dddddd;
+  border-left: 5px solid #DA524B;
   padding-bottom: 3em;
   position: relative; 
 }
@@ -105,7 +121,7 @@ Timeline
   bottom: 0;
   width: 20px;
   height: 5px;
-  background: #dddddd;
+  background: #DA524B;
 }
 
 /* Individual Timeline Item */
@@ -123,12 +139,12 @@ Timeline
   position: absolute;
   width: 10px;
   height: 5px;
-  background: #ddd;
+  background: #DA524B;
 }
 
 /* Timestamp */
 span {
-  color: #bbb;
+  color: #843837;
   font-weight: 700;
   font-size: 0.9rem; 
   text-transform: uppercase;
