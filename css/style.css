@@ -23,22 +23,6 @@ Reset
   clear: both;
 }
 
-html, body, div, object, iframe, fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0; 
-}
-
-ol, ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; 
-}
-
-header, footer, nav, section, article, hgroup, figure {
-  display: block; 
-}
-
 /************************************
 End Reset
 ************************************/
@@ -47,23 +31,43 @@ End Reset
 Global
 ************************************/
 
-body {
-  background: #fff;
-  color: #222222;
-  font-family: 'Open Sans', sans-serif;
-  padding: 1em;
-  -webkit-text-size-adjust: 100%; 
+html {
+  font-size: 16px;
 }
 
-@media all and (min-width: 40em) {
-  body {
-    padding-left: 2em; 
-  } 
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 300;
+  /*-webkit-text-size-adjust: 100%; */
+}
+
+h1, h2, h3 {
+  font-family: 'Quicksand', sans-serif; 
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2; 
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 a {
-  color: gray;
-  text-decoration: none; 
+  font-weight: 700;
 }
 
 a:hover, a:focus {
@@ -71,40 +75,13 @@ a:hover, a:focus {
   text-decoration: none; 
 }
 
-p {
-  margin: 0 0 1em; 
+.container {
+  margin: 0 auto;
+  width: 65%;
 }
 
-img, object, video {
-  max-width: 100%;
-  border: 0; 
-}
-
-a img {
-  border: 0;
-  outline: 0; 
-}
-
-h1 {
-  font-size: 2em;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.2em; 
-  font-family: 'Quicksand', sans-serif; 
-}
-
-h2 {
-  text-transform: lowercase;
-  font-size: 3em;
-  line-height: 1.1;
-  margin: 0 0 0.4em; 
-}
-
-h3 {
-  font-size: 1.8em;
-  line-height: 1.1;
-  margin: 0 0 0.2em;
-  text-transform: lowercase; 
+.introduction {
+  margin: 40px 0;
 }
 
 /************************************
@@ -126,41 +103,35 @@ Timeline
   content: "";
   position: absolute;
   bottom: 0;
-  left: -1.8em;
-  width: 40px;
-  height: 40px;
-  /*border-radius: 40px;*/
+  width: 20px;
+  height: 5px;
   background: #dddddd;
-  border: 5px solid #dddddd; 
 }
 
 /* Individual Timeline Item */
 .tl-node {
-  padding-left: 2em;
   margin-bottom: 3em;
   position: relative; 
 }
 
-.tl-node a {
-  display: block; 
+.tl-content {
+  padding-left: 4em;
 }
 
 .tl-node:before {
   content: "";
   position: absolute;
-  top: 0;
-  left: -1.05em;
-  width: 20px;
-  height: 20px;
-  /*border-radius: 20px;*/
-  background: #fff;
-  border: 5px solid #dddddd; 
+  width: 10px;
+  height: 5px;
+  background: #ddd;
 }
 
 /* Timestamp */
-.tl-stamp {
-  font-size: 0.7em;
-  color: gray; 
+span {
+  color: #bbb;
+  font-weight: 700;
+  font-size: 0.9rem; 
+  text-transform: uppercase;
 }
 
 /************************************
