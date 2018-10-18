@@ -50,21 +50,33 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
+  margin-bottom: .2em;
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2; 
+  margin-bottom: .4em;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.2;
+  margin-bottom: .4em;
+}
+
+header {
+  background: #DA524B;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 175px;
 }
 
 .cta {
@@ -79,13 +91,13 @@ h3 {
 }
 
 a:hover, a:focus {
-background: #fff;
-color: #F46862;
+background: #DA524B;
+color: #FFF;
 }
 
 .container {
   margin: 0 auto;
-  width: 65%;
+  width: 60%;
 }
 
 .introduction {
@@ -94,6 +106,12 @@ color: #F46862;
 
 .deliverables {
   margin-bottom: 80px;
+}
+
+.line-break {
+  height: 1px;
+  margin-top: 40px;
+  background: #DA524B;
 }
 
 /************************************
@@ -121,18 +139,6 @@ Timeline
 }
 
 /* Individual Timeline Item */
-.tl-node {
-  margin-bottom: 3em;
-  position: relative; 
-}
-
-.tl-content {
-  padding-left: 4em;
-}
-
-.tl-content p {
-  margin-bottom: 20px;
-}
 
 .tl-node:before {
   content: "";
@@ -142,8 +148,22 @@ Timeline
   background: #DA524B;
 }
 
+.tl-node {
+  /*margin-bottom: 3em;*/
+  position: relative; 
+}
+
+.tl-content {
+  padding-top: 20px;
+  padding-left: 4em;
+}
+
+.tl-content p {
+  margin-bottom: 20px;
+}
+
 /* Timestamp */
-span {
+.date {
   color: #843837;
   font-weight: 700;
   font-size: 0.9rem; 
